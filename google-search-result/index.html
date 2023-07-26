@@ -1,17 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/reset.css">
-  <title>Google Search</title>
-</head>
-<body>
-  <h1>Google</h1>
-  <form action="https://www.google.com/search" method="GET">
-    <input type="text" name="search" placeholder="Search">
-    <input type="submit" value="Search">
-  </form>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/google-search-result/images/favicon.ico" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>borscht soup - Google Search</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-t">
+        <div class="nav-t-l">
+          <div class="logo">
+            <a href="https://www.google.com/">
+              <img
+                src="/google-search-result/images/google-main-icon.png"
+                alt="Google Icon"
+              />
+            </a>
+          </div>
+          <form action="https://www.google.com/search" method="GET">
+            <input
+              type="text"
+              name="search"
+              placeholder="Search"
+              value="borscht soup"
+            />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+        <div class="nav-t-r">
+          <p>settings</p>
+          <p>apps</p>
+          <p>profile</p>
+        </div>
+      </div>
+      <div class="nav-b">
+        <div class="nav-b-l">
+          <a href="#">
+            <div>Images</div>
+          </a>
+          <a href="#">
+            <div>Near Me</div>
+          </a>
+          <a href="#">
+            <div>Videos</div>
+          </a>
+          <a href="#">
+            <div>Recipe</div>
+          </a>
+          <a href="#">
+            <div>Shopping</div>
+          </a>
+          <a href="#">
+            <div>Vegetarian</div>
+          </a>
+          <a href="#">
+            <div>Ingredients</div>
+          </a>
+          <a href="#">
+            <div>With beef</div>
+          </a>
+          <a href="#">
+            <div>Calories</div>
+          </a>
+        </div>
+        <div class="nav-b-c">
+          <a href="#">
+            <div>All filters</div>
+          </a>
+          <a href="#">
+            <div>Tools</div>
+          </a>
+        </div>
+        <div class="nav-b-r">
+          <a href="#">
+            <div>SafeSearch</div>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>

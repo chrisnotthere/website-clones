@@ -1,0 +1,44 @@
+nav .nav-t {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-t .nav-t-l {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+nav .nav-t .nav-t-l .logo img {
+  width: 92px;
+}
+nav .nav-t .nav-t-r {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .nav-b {
+  display: flex;
+  justify-content: space-between;
+}
+nav .nav-b .nav-b-l {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .nav-b .nav-b-c {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav .nav-b .nav-b-r {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+body {
+  background-color: #202124;
+  color: #bdc1c6;
+  font-family: arial, sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
