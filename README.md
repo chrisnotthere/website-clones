@@ -2,9 +2,9 @@
 
 This project contains clones of popular websites. The aim of this project is to demonstrate my ability to accurately take an existing design and create a web page from it. Please note that I do not own the designs or assets of these websites; they are owned by their respective companies. This project is solely for learning and demonstration purposes.
 
-## Google Search Page
+## Google Search Results Page
 
-This website clone is built with HTML and SCSS. The design aims to replicate the clean, minimalistic design of the Google search page.
+This website clone is built with HTML and SCSS. The design aims to replicate the clean, minimalistic design of the Google search result page.
 
 ## Amazon Home Page
 
