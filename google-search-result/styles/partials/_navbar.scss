@@ -1,9 +1,11 @@
 nav {
   // background-color: rgb(74, 100, 122);
+  border-bottom: 1px solid $border-color;
 
   .nav-t {
     display: flex;
     justify-content: space-between;
+    padding: 1.25rem 0.5rem 0.5rem 0.5rem;
 
     .nav-t-l {
       display: flex;
@@ -11,16 +13,111 @@ nav {
       gap: 3rem;
 
       .logo {
-        
+        margin-left: 2rem;
+
         img {
-          width: 92px;
-          // height: 30px;
-          // aspect-ratio: 92/30;
+          width: 80px;
         }
       }
 
       form {
-        // style form here
+        .searchbar-container {
+          display: flex;
+          position: relative;
+
+          .searchbar {
+            background-color: $search-bar-background;
+            color: $text-grey;
+            border-radius: 1rem;
+            padding: 0.6rem 1rem;
+            width: 500px;
+            border: none;
+          }
+
+          .searchbar-icons {
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+
+            .icon-container,
+            #submit-button {
+              position: relative;
+
+              svg {
+                cursor: pointer;
+                width: 20px;
+              }
+
+              .tooltip {
+                visibility: hidden;
+                width: 50px;
+                background-color: $background-color-body;
+                color: $text-grey;
+                text-align: center;
+                padding: 5px 0;
+                border: 1px solid $border-color;
+                border-radius: 6px;
+                font-size: 0.7rem;
+                /* Position the tooltip */
+                position: absolute;
+                z-index: 1;
+                top: 125%;
+                left: 50%;
+                margin-left: -25px; /* Use half of the width to center it */
+                /* Fade in */
+                opacity: 0;
+                transition: opacity 0.3s;
+
+                &.tooltip-x {
+                  width: 40px;
+                  margin-left: -20px;
+                }
+
+                &.tooltip-voice {
+                  width: 95px;
+                  margin-left: -47.5px;
+                }
+
+                &.tooltip-image {
+                  width: 100px;
+                  margin-left: -45px;
+                }
+              }
+
+              &:hover .tooltip {
+                visibility: visible;
+                opacity: 1;
+              }
+            }
+
+            .icon-x {
+              path {
+                fill: $icon-grey;
+              }
+            }
+
+            .bar {
+              width: 0.5px;
+              height: 20px;
+              background-color: $icon-grey;
+            }
+
+            .icon-search {
+              path {
+                fill: #8ab4f8;
+              }
+            }
+
+            #submit-button {
+              background: none;
+              border: none;
+              height: 25px;
+            }
+          }
+        }
       }
     }
 
@@ -34,11 +131,29 @@ nav {
   .nav-b {
     display: flex;
     justify-content: space-between;
-    
+    padding: 0.5rem;
+    margin-left: 10rem;
+    font-size: 0.7rem;
+
+    a {
+      text-decoration: none;
+      color: $text-grey;
+    }
+
     .nav-b-l {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 0.25rem;
+
+      a {
+        color: #f1f3f4;
+        border: 1px solid $border-color;
+        border-radius: 1rem;
+        padding: 0.5rem 0.75rem;
+      }
+      a:hover {
+        background-color: $highlight-grey;
+      }
     }
 
     .nav-b-c {
@@ -54,4 +169,3 @@ nav {
     }
   }
 }
-

@@ -1,9 +1,10 @@
+@import "partials/variables";
 @import "partials/navbar";
 @import "partials/search-results";
 @import "partials/footer";
 
 body {
-  background-color: #202124;
-  color: #bdc1c6;
+  background-color: $background-color-body;
+  color: $text-grey;
   font-family: arial, sans-serif;
 }
