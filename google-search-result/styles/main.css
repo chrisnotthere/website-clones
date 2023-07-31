@@ -216,6 +216,52 @@ nav .nav-b .bar {
   background-color: #3c4043;
   margin-right: 0.25rem;
 }
+footer {
+  background-color: #171717;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+}
+footer .foot-t {
+  display: flex;
+  border-bottom: 1px solid #3c4043;
+}
+footer .foot-t .foot-t-l {
+  padding: 1rem;
+  margin-left: 10rem;
+  border-right: 1px solid #3c4043;
+}
+footer .foot-t .foot-t-r {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+footer .foot-t .foot-t-r p.location {
+  color: #f1f3f4;
+  font-weight: 600;
+}
+footer .foot-t .foot-t-r span.circle {
+  background-color: #bdc1c6;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+footer .foot-t .foot-t-r a {
+  text-decoration: none;
+  color: #8ab4f8;
+}
+footer .foot-b {
+  padding: 1rem;
+  margin-left: 10rem;
+}
+footer .foot-b a {
+  text-decoration: none;
+  color: #8ab4f8;
+  font-weight: 600;
+}
+
 body {
   background-color: #202124;
   color: #bdc1c6;
